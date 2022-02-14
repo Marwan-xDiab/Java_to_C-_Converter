@@ -1,0 +1,131 @@
+﻿<Window x:Class="WpfApp2.How_Use"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        
+        AllowsTransparency="True"
+        Background="Transparent"
+      Height="600" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"   WindowStyle="None"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+    </Window.Resources>
+  
+        <Border CornerRadius="20"  BorderThickness="0" BorderBrush="#FF45B1E0" >
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.802"/>
+                    <GradientStop Color="#FFCAE7F4" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="356*"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+
+                <Border     CornerRadius="20,20,0,0" BorderThickness="0"   Background="#FF252526" BorderBrush="Black" >
+                <Grid  x:Name="GridBarratitulo" Grid.Row="0"   Margin="0,0,0,1"  >
+                        <TextBlock  Margin="12,0,0,0" Text="How to use guide" HorizontalAlignment="Left"  Foreground="White" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" />
+
+                    </Grid>
+                </Border>
+            <Grid Grid.Row="1">
+                <StackPanel Orientation="Vertical" Margin="30,10,10,0">
+                    
+                    <TextBlock FontSize="22"  Margin="0,3" FontWeight="Bold" Foreground="Black" >
+                        How to use program? 
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        1 ) In the left area paste your copied java code, or simply load it from the load button.
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        2 ) Click the Convert button.
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        3 ) Generated C++ code will appear on right side area.
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        4 ) Press Copy to Clipboard button to keep code in the clipboard, or save it in a text file.
+                    </TextBlock>
+
+                    <TextBlock FontSize="22"  Margin="0,3" Foreground="Black" FontWeight="Bold" >
+                        What System can translate:-
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        1 ) Object Oriented Functions
+                    </TextBlock>
+
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        2 ) Arrays
+                        
+                    </TextBlock>
+
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        3 ) Identifiers
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        4 ) Data Types
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        5 ) Operators 
+                    </TextBlock>
+
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        6 ) Strings
+                    </TextBlock>
+
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        7 ) If Statement
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        8 ) Switch Statement
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        9 ) Looping Statements
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="20,3" FontWeight="Medium" Foreground="#FF043246" >
+                        10 ) Methods
+                    </TextBlock>
+                </StackPanel>
+                
+            </Grid>
+                <Grid   Grid.Row="2"   Margin="0,0,0,0"  >
+                <StackPanel Orientation="Horizontal" Margin="20,6" FlowDirection="RightToLeft" >
+                    <Button
+                        Name="Okey"
+                            Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                            Height="Auto"
+                            materialDesign:ButtonAssist.CornerRadius="3"
+                            ToolTip="MaterialDesignRaisedDarkButton with Round Corners" Background="#FF252526" BorderBrush="{x:Null}" HorizontalAlignment="Center" MinWidth="150" Foreground="#DDFFFFFF" Click="Button_Click">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Start" FontSize="18" Margin="5,0" Foreground="#DDFFFFFF"/>
+                        </StackPanel>
+                    </Button>
+
+                </StackPanel>
+            </Grid>
+        </Grid>
+        </Border>
+   
+</Window>
